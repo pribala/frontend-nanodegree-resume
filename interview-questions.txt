@@ -1,9 +1,21 @@
 1. 	What is the most influential book or blog post you’ve read regarding web development?
 2. 	Tell me about a web application you have built. Why did you choose to build it? 
 	What did you learn? What challenges did you face and how did you overcome them?
+
 3. 	Write a function in Python that takes a list of strings and returns a single string that is an 
 	HTML unordered list (<ul>...</ul>)of those strings. You should include a brief explanation of your code. 
 	Then, what would you have to consider if the original list was provided by user input?
+	
+	def create_HTMLList(inputStr):
+		htmlStr = "<ul>"
+		for item in inputStr:
+		    htmlStr += str(item)
+		htmlStr += "</ul>"
+		print(htmlStr)
+			
+		
+	create_HTMLList(listStr)
+
 4.	List 2-3 attacks that web applications are vulnerable to. How do these attacks work? How can we prevent those attacks?
 5.	Here is some starter code for a Flask Web Application. Expand on that and include a route that simulates rolling 
 	two dice and returns the result in JSON. You should include a brief explanation of your code.
