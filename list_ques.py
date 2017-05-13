@@ -1,4 +1,5 @@
-def create_List(args):
+def create_List():
+    args = input()
     htmlStr = "<ul>\n"
     for item in args:
         htmlStr += "<li>" + str(item) + "</li>\n"
@@ -8,5 +9,5 @@ def create_List(args):
 	
 listStr=["Cow", "Dog", "Cat"]
 #listStr=[1,2,3]	
-print(create_List(listStr))
+print(create_List())
 	
